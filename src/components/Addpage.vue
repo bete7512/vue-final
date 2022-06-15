@@ -7,7 +7,7 @@
       <input
         type="text"
         v-model="title"
-        placeholder="Enter tiltes of the page" 
+        placeholder="please Enter some tiltes of the page unless it goes to some problem" 
         class="titleinput text-2xl italic font-serif border-2 border-zinc-900" required
       />
     </div>
@@ -40,7 +40,7 @@
       </button>
     </div>
   </div>
-  <footer class="footer p-4 mb-0   rounded-md shadow md:flex md:items-center md:justify-between md:p-6 ">
+  <footer class="footer p-4 mb-0 mt-4 rounded-md shadow md:flex md:items-center md:justify-between md:p-6 ">
     <span class="text-sm text-white sm:text-center ">
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm text-white dark:text-gray-400 sm:mt-0">
@@ -121,12 +121,12 @@ const discard = ()=>{
   width: 100%;
   height: 200px;
 }
-/* .footer {
-  position: absolute;
+.footer {
+  position: static;
   bottom: 0;
   width: 100%;
   height: 60px;
   background: #1B3B6C;
- */
-/* } */
+ 
+}
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <router-view></router-view> -->
   </div>
   <footer class="footer p-4 mb-0   rounded-md shadow md:flex md:items-center md:justify-between md:p-6 ">
     <span class="text-sm text-white sm:text-center ">
@@ -19,7 +18,7 @@
 <script></script>
 <style scoped>
 .footer {
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
   height: 60px;

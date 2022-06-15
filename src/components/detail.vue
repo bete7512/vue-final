@@ -9,7 +9,15 @@
     {{ result.pages_by_pk.published }} 
    </span>
    <div class="flex space-x-4 mt-3">
-    <span class="w-40 h-10 rounded-md  bg-cyan-900 hover:bg-black font-sans  text-white px-5 shadow-lg text-2xl"><router-link :to="{name:'editPage',params:{slug:$route.params.slug}}"> Edit pages</router-link> </span>
+    <span class="w-40 h-10 rounded-md  bg-cyan-900 hover:bg-black font-sans  text-white px-5 shadow-lg text-2xl"><router-link :to="{name:'editPage',
+    params:{
+      id:result.pages_by_pk.id,
+      title:result.pages_by_pk.title,
+      content:result.pages_by_pk.content,
+      published:result.pages_by_pk.published,
+      image_url:result.pages_by_pk.image_url,
+      slug:$route.params.slug
+      }}"> Edit pages</router-link> </span>
     <span class="w-40 h-10 rounded-md  bg-cyan-900 hover:bg-black font-sans  text-white px-5 shadow-lg text-2xl">  <router-link :to="{name:'deletepage',params:{slug:$route.params.slug}}"> Delete pages</router-link></span>
     <span class="w-40 h-10 rounded-md  bg-cyan-900 hover:bg-black font-sans  text-white px-5 shadow-lg text-2xl"><router-link :to="{name:'Post',params:{slug:$route.params.slug}}"> Preview pages</router-link></span>
     <!-- <span class="w-40 h-10 rounded-md  bg-cyan-900 hover:bg-black font-sans  text-white px-5 shadow-lg text-2xl">   Post pages   </span> -->
@@ -30,6 +38,8 @@ export default {
         query MyQuery($slug: String!) {
           pages_by_pk(slug: $slug) {
             id
+            content
+            image_url
             published
             title
           }

@@ -21,34 +21,30 @@ const routes = [
         path: '/Pagelist/:slug',
         name: 'Pagelist',
         component: Pagelist,
-        children:
-            [
-                {
-                    path: '/:slug',
+    },
+     {
+                    path: '/detail/:slug',
                     component: detail,
                     name: 'detail',
-                },
+    },
                  
-            {
-                path: '/:slug',
+    {
+                path: '/deletepage/:slug',
                 component: deletepage,
                 name: 'deletepage',
-            },
-            {
-                path: '/:slug',
+     },
+  {
+                path: '/editpage/:slug',
                 component: editPage,
                 name: 'editPage',
             },
             {
-                path: '/:slug',
+                path: '/PreviewPost/:slug',
                 component: Post,
                 name: 'Post',
 
             }
 
-
-            ]
-    },
 
 
 ]

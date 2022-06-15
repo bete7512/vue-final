@@ -5,7 +5,7 @@
    <div ><img class="h-auto w-full " :src="result.pages_by_pk.image_url" ></div>
     
 </div>
- <!-- <footer class=" footer p-4 mb-0 bottom-0 rounded-md shadow md:flex md:justify-between md:p-6 b">
+ <footer class=" footer p-4  rounded-md shadow md:flex md:justify-between md:p-6 b">
     <span class="text-sm text-white sm:text-center ">
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm text-white dark:text-gray-400 sm:mt-0">
@@ -16,7 +16,7 @@
             <a href="#" class="mr-4 hover:underline md:mr-6 text-xl">figma</a>
         </li>
     </ul>
-</footer> -->
+</footer>
 </template>
 <script>
 import { useQuery} from "@vue/apollo-composable";
@@ -50,7 +50,7 @@ export default {
 </script>
 <style >
   .footer {
-  position: absolute;
+position: static ;
   bottom: 0;
   width: 100%;
   height: 60px;

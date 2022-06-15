@@ -26,6 +26,5 @@ import { useRoute } from "vue-router";
       () => ({ variables:
       {slug: slug} }),
     )
-
 </script>
 <style lang=""></style>
